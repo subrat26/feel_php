@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth:api'], function(){
 Route::group(['middleware' => 'auth:api'], function(){
     Route::get('post', 'PostController');
     Route::post('createPost', 'PostController@create_post');
-    Route::post('get_comment_for_post', 'PostController@get_comment_for_post');
+    Route::post('getComments', 'PostController@getComments');
 });
 
 
